@@ -3,8 +3,6 @@ const locationInput = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
 const messageTwo = document.querySelector("#message-2");
 
-console.log();
-
 weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
