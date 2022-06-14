@@ -10,6 +10,7 @@ const hbs = require("hbs");
 // console.log(process.argv[2]);
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -27,7 +28,7 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   // render allows us render one of our views
   res.render("index", {
-    title: "The Weather_App",
+    title: "tracking the Sun _",
     name: "Kabs Khunou",
   });
 });
@@ -110,6 +111,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is up on port 3000.");
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}.`);
 });
