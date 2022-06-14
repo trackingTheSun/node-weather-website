@@ -115,8 +115,15 @@ form {
 .weather-text {
   font-size: 1.8rem;
   line-height: 1.6;
-  margin: 1.2rem;
+  margin-bottom: 1.2rem;
   color: #555;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #888;
 }
 
 input {
