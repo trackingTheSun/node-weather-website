@@ -32,7 +32,6 @@ const forecast = (lat, lon, callback) => {
           },
           error: bodyError,
         },
-        body,
       }
     ) => {
       if (error)
